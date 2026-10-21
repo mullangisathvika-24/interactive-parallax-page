@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-handwriting: 'Caveat', cursive;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF6EF;
+    color: #2D2825;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-handwriting {
+    font-family: var(--font-handwriting);
+  }
+}
+
+/* Custom scrollbar matching warm paper aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C3B3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BFA894;
+}
+
+/* Subtle paper texture overlay */
+.paper-grain {
+  background-image: radial-gradient(rgba(120, 95, 75, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Warm illustrated line styling */
+.hand-drawn-border {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/* Keyframe animations for gentle natural living motion */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes cloudDriftSlow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
+}
+
+@keyframes swayPlant {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2.5deg); }
+}
+
+@keyframes steamRise {
+  0% { transform: translateY(0) scaleX(1); opacity: 0.6; }
+  50% { transform: translateY(-12px) scaleX(1.15); opacity: 0.8; }
+  100% { transform: translateY(-24px) scaleX(0.9); opacity: 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.4)); }
+  50% { opacity: 0.95; filter: drop-shadow(0 0 24px rgba(251, 191, 36, 0.7)); }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+.animate-sway {
+  animation: swayPlant 5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-steam {
+  animation: steamRise 3s ease-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

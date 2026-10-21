@@ -1,0 +1,6 @@
+{
+  "name": "Little Things, Big World",
+  "description": "An immersive, human-centered parallax scrolling journey celebrating the quiet, ordinary moments that make life meaningful.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
