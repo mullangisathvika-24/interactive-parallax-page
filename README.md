@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Interactive Parallax Scrolling Page
 
-# Run and deploy your AI Studio app
+## Project Overview
+An interactive, responsive web experience built with React, TypeScript, and Vite. The project demonstrates parallax scrolling effects that create a sense of depth and movement as users scroll through the page.
 
-This contains everything you need to run your app locally.
+## Objectives
+- Create an engaging scrolling experience.
+- Implement smooth visual transitions and parallax effects.
+- Build a responsive interface for different screen sizes.
+- Apply modern frontend development tools and practices.
 
-View your app in AI Studio: https://ai.studio/apps/86daf1f4-9eb6-4c8d-9a53-014138350c3f
+## Technologies Used
+- **React** – UI development
+- **TypeScript** – Type-safe JavaScript
+- **Vite** – Development server and build tool
+- **Tailwind CSS** – Styling and layout
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
+Install [Node.js](https://nodejs.org/) and npm.
 
+### Installation
+Clone the repository:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+git clone https://github.com/mullangisathvika-24/interactive-parallax-page.git
+cd interactive-parallax-page
+npm install
+```
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Deployment
+The project is configured for deployment through GitHub Pages using GitHub Actions.
+
+**Live Demo:** https://mullangisathvika-24.github.io/interactive-parallax-page/
+
+## Repository
+https://github.com/mullangisathvika-24/interactive-parallax-page
+
+## Author
+Sathvika Sai
