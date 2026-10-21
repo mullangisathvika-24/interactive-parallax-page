@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/interactive-parallax-page/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
