@@ -52,4 +52,4 @@ The project is configured for deployment through GitHub Pages using GitHub Actio
 https://github.com/mullangisathvika-24/interactive-parallax-page
 
 ## Author
-Sathvika Sai
+Sathvika 
